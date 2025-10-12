@@ -17,8 +17,9 @@ services:
       SEED: ${SEED}
       SNOOPER_ENABLED: false
 
-      TYPE: FORGE
-      VERSION: "1.20.1"
+      NEOFORGE_VERSION: "21.1.210"
+      TYPE: NEOFORGE
+      VERSION: "1.21.3"
 
       INIT_MEMORY: 8G
       MAX_MEMORY: 20G
