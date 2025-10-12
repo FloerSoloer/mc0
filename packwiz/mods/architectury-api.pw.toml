@@ -1,0 +1,13 @@
+name = "Architectury API"
+filename = "architectury-14.0.4-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/lhGA9TYQ/versions/avlNAUxs/architectury-14.0.4-neoforge.jar"
+hash-format = "sha512"
+hash = "cb19d97cf0be6124530cebc88d3cef5eefa38f787195175a018bf8cca702aa41dd9b2c426ed8a5e1684b82635e4641172e864018c18cbb629bfa39dc0c988109"
+
+[update]
+[update.modrinth]
+mod-id = "lhGA9TYQ"
+version = "avlNAUxs"
