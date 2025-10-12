@@ -18,6 +18,7 @@ services:
       SNOOPER_ENABLED: false
 
       NEOFORGE_VERSION: "21.1.210"
+      PACKWIZ_URL: ${MODPACK}
       TYPE: NEOFORGE
       VERSION: "1.21.3"
 
