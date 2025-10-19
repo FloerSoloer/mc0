@@ -26,6 +26,8 @@ services:
       MAX_MEMORY: 20G
       USE_MEOWICE_FLAGS: true
       USE_MEOWICE_GRAALVM_FLAGS: true
+    networks:
+      - default
     volumes:
       - ./data:/data
   bk:
@@ -41,6 +43,12 @@ services:
       BACKUP_METHOD: restic
       RESTIC_PASSWORD: ${RESTIC_PASSWORD}
       RESTIC_REPOSITORY: ${RESTIC_REPOSITORY}
+    networks:
+      - default
     volumes:
       - ./data:/data:ro
       - ${BACKUP_MNT}:/backups
+networks:
+  default:
+    external: true
+    name: ${DOCKER_NETWORK}
