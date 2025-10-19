@@ -29,7 +29,7 @@ services:
     networks:
       - default
     volumes:
-      - ./data:/data
+      - ${MNT_DATA}:/data
   bk:
     image: itzg/mc-backup:stable
     environment:
@@ -46,8 +46,8 @@ services:
     networks:
       - default
     volumes:
-      - ./data:/data:ro
-      - ${BACKUP_MNT}:/backups
+      - ${MNT_DATA}:/data:ro
+      - ${MNT_BACKUP}:/backups
 networks:
   default:
     external: true
